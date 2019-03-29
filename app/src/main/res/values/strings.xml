@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name" >name</string>
+    <string name="height" >height</string>
+    <string name="weight" >weight</string>
+    <string name="button" >buttom</string>
+</resources>
