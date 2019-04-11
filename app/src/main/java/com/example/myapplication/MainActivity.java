@@ -32,11 +32,30 @@ public class MainActivity extends AppCompatActivity {
 
         //txv.setTextSize(size);
         txv.setText(e1.getText().toString() + ",您好\n" + "您的BMI是:" + BMI0);
-        Toast.makeText(this,standardBMI(BMI), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,standarBMI(BMI), Toast.LENGTH_SHORT).show();
     }
 
     private float cBMI(float h , float w){
-        float BMI = (float) (w / Math.pow(h / 100),2);
+        float BMI = (float) (w / Math.pow((h/100),2));
+        return BMI;
+    }
+
+    private String standarBMI(double st){
+        String alert = "";
+
+        if(st > 25){
+            alert = String.valueOf("You are too heavy!!!");
+            getWindow().setBackgroundDrawableResource(R.drawable.fat_cry);
+        }
+        else if(st < 18.5){
+            alert = String.valueOf("You are too slim_cry!!!");
+            getWindow().setBackgroundDrawableResource(R.drawable.slim_cry);
+        }
+        else{
+            alert = String.valueOf("Your body is good!!!");
+        }
+
+        return alert;
     }
 }
 
