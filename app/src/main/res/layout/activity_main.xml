@@ -11,6 +11,7 @@
         android:layout_width="190dp"
         android:layout_height="176dp"
         android:text="Hello!!!"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.004"
