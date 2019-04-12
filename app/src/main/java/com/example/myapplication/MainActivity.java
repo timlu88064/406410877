@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getWindow().setBackgroundDrawableResource(R.drawable.yogurt);
+        getWindow().setBackgroundDrawableResource(R.drawable.cat);
     }
     int size = 15;
     public void response(View v){
@@ -46,15 +46,15 @@ public class MainActivity extends AppCompatActivity {
 
         if(st > 25){
             alert = String.valueOf(getResources().getString(R.string.t_fat));
-            getWindow().setBackgroundDrawableResource(R.drawable.donpo);
+            getWindow().setBackgroundDrawableResource(R.drawable.fat);
         }
         else if(st < 18.5){
             alert = String.valueOf(getResources().getString(R.string.t_slim));
-            getWindow().setBackgroundDrawableResource(R.drawable.bambo);
+            getWindow().setBackgroundDrawableResource(R.drawable.s);
         }
         else{
             alert = String.valueOf(getResources().getString(R.string.good));
-            getWindow().setBackgroundDrawableResource(R.drawable.yogurt);
+            getWindow().setBackgroundDrawableResource(R.drawable.cat);
         }
 
         return alert;
