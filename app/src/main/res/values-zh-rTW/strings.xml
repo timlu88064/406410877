@@ -4,5 +4,10 @@
     <string name="name">輸入姓名</string>
     <string name="height">輸入身高</string>
     <string name="weight">輸入體重</string>
-    <string name="button">算</string>
+    <string name="button">計算</string>
+    <string name="t_fat">該減肥囉!!!</string>
+    <string name="t_slim">請多吃一點不要挑食!!!</string>
+    <string name="good">很好喔!請繼續保持</string>
+    <string name="Hello">,您好</string>
+    <string name="your">您的BMI是 :</string>
 </resources>

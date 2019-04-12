@@ -3,5 +3,10 @@
     <string name="name" >name</string>
     <string name="height" >height</string>
     <string name="weight" >weight</string>
-    <string name="button" >buttom</string>
+    <string name="button" >button</string>
+    <string name="t_fat">Too fat~~</string>
+    <string name="t_slim">Too slim!!!</string>
+    <string name="good">Nice body</string>
+    <string name="Hello">Hello!</string>
+    <string name="your">Your BMI is :</string>
 </resources>

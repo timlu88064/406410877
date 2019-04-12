@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().setBackgroundDrawableResource(R.drawable.yogurt);
     }
     int size = 15;
     public void response(View v){
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         String BMI0 = String.valueOf(BMI);
 
         //txv.setTextSize(size);
-        txv.setText(e1.getText().toString() + ",您好\n" + "您的BMI是:" + BMI0);
+        txv.setText(e1.getText().toString() + getResources().getString(R.string.Hello) + getResources().getString(R.string.your) + BMI0);
         Toast.makeText(this,standarBMI(BMI), Toast.LENGTH_SHORT).show();
     }
 
@@ -44,15 +45,16 @@ public class MainActivity extends AppCompatActivity {
         String alert = "";
 
         if(st > 25){
-            alert = String.valueOf("You are too heavy!!!");
+            alert = String.valueOf(getResources().getString(R.string.t_fat));
             getWindow().setBackgroundDrawableResource(R.drawable.donpo);
         }
         else if(st < 18.5){
-            alert = String.valueOf("You are too slim!!!");
+            alert = String.valueOf(getResources().getString(R.string.t_slim));
             getWindow().setBackgroundDrawableResource(R.drawable.bambo);
         }
         else{
-            alert = String.valueOf("Your body is good!!!");
+            alert = String.valueOf(getResources().getString(R.string.good));
+            getWindow().setBackgroundDrawableResource(R.drawable.yogurt);
         }
 
         return alert;
